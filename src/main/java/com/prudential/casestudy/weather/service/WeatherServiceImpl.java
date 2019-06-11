@@ -74,6 +74,10 @@ public class WeatherServiceImpl implements WeatherService {
 	public void writeToFile(List<City> cities) throws JsonGenerationException, JsonMappingException, IOException {
 		long timestamp = Calendar.getInstance().getTimeInMillis();
 		ObjectMapper om = new ObjectMapper();
+		File dir = new File(outputPath);
+		if(!dir.exists()) {
+			dir.mkdirs();
+		}
 		String path = outputPath + File.separator + prefix + "_" + timestamp;
 		log.info("writing output at " + path);
 		File resultFile = new File(path);

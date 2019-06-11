@@ -10,11 +10,15 @@ goto target folder
 
 	cd target
 
-create output directory at C:\weather (default) if you want to override output path then  
-set "output.path" to env variable
+
 In order to start web application on port 8080
 
 	java -jar  weather-0.0.1-SNAPSHOT.jar
+
+
+output is C:\weather (default) if you want to override output path then  
+
+	java -jar weather-0.0.1-SNAPSHOT.jar  --output.path="C:\\asd\\qwe"
 
 after application started. you can upload file 
 URL:-
