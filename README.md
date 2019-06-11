@@ -20,13 +20,14 @@ output is C:\weather (default) if you want to override output path then
 
 	java -jar weather-0.0.1-SNAPSHOT.jar  --output.path="C:\\asd\\qwe"
 
-after application started. you can upload file 
-URL:-
-	http://localhost:8080/upload
-HEADER:-
-	content-type:multipart/form-data
-BODY:-
-	file:<file> 
+after application started. you can upload file
+
+	URL:-
+		http://localhost:8080/upload
+	HEADER:-
+		content-type:multipart/form-data
+	BODY:-
+		file:<file> 
 	
 	
 You can use Advance Rest client chrome plugin to test.
